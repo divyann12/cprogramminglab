@@ -1,11 +1,21 @@
-#include <stdio.h>
-
-int main(){
-    int number[5]={1,2,3,4,5};
-    for(int i=0;i<5;i++){
-        printf("%d\n",number[i]);
-    }    
-
-    
-    return 0;
+#include<stdio.h>
+void fun();
+void main()
+{
+    int a=30;
+{
+    int a=40;
+    printf("%d\n",a);
+} 
+fun();
+fun();
+printf("hello wellcome to collage");
+fun();
 }
+
+void fun()
+{
+    static int a=30,b;
+    b=++a;
+    printf("coming from fun b =%d\n",b);
+}   

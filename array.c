@@ -1,7 +1,11 @@
 #include<stdio.h>
-int main(){
-    int numbers[5]={1,2,3,4};
-    printf("element 1: %d\n",numbers[4]);
-    printf("element 3: %d\n",numbers[2]);
-    return 0;
+void main(){
+    int arr[]={25,11,7,75,36};
+    int length=sizeof(arr)/sizeof(arr[0]);
+    int max=arr[0];
+    for(int i=0;i<length;i++){
+        if(arr[i]>max)
+        max=arr[i];
+    }
+   printf("largest element present in given array:%d\n");
 }
